@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Getting Started: Handing Form Submission</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'name: ' + ${enter.name}" />
+<p th:text="'message: ' + ${enter.message}" />
+<p th:text="'convert message: ' + ${enter.convertMessage}" />
+
+<a href="/enterPage">Submit another message</a>
+<br>
+<a href="/download">Download results on file(.scv)</a>
+<br>
+
+<a th:href="@{/showAll}" >View examples
+</a>
+
+</body>
+</html>
